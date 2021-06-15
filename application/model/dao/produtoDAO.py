@@ -4,14 +4,7 @@ import json
 
 
 class ProdutoDAO():
-
-
-    def produto_list(self):
-        return self.__produto_list
-
-
-
-
+    
     def dict_to_list(self, lista_prod):
         lista = []
         for produto_item in lista_prod:

@@ -4,13 +4,15 @@
     height: 80px;
     background-color: #ffcd00;
     box-shadow: 1px 3px 4px #A6A6A6;
-    position: fixed;
+    position:relative;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     z-index: 9;
     
 }
+
+
 
 .navbar .logo{
     width: 130px;
@@ -26,11 +28,6 @@
 }
 
 
-.navbar .menu .toggle{
-    box-sizing: border-box;
-    cursor: pointer;  
-}
-
 #menu_botao{
     color: rgba(255,255,255,.5);
     border-color: rgba(255,255,255,.1);
@@ -40,8 +37,14 @@
     border: 1px solid transparent;
     border-radius: .25rem;
 
-    display: inline-block;
 }
+
+#menu_carrinho{
+    
+    height: 30px;
+    margin-right: 20px;
+}
+
 
 
 #dropdown-content {
@@ -56,17 +59,25 @@
     width: 94.8%;
 }
 
-
-
-#Produtos{
-    width: 20px;
-    height: 20px;
-    background-color: #d62a33;
-    border-radius: 100%;
-    position: absolute;
-    margin-left: -10px;
-    margin-top: 10px;
-    font-size: 16px;
-    color:white;
-    font-weight: bold;
+div#carrinho{
+    background-color: #ffcd00;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top:1%; 
+    padding-left: 2.5%;
+    padding-right: 2.5%;
 }
+
+a#btn-sucess {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745
+}
+
+a#btn-danger {
+    color: #fff;
+    background-color: #dc3545;
+    border-color: #dc3545
+}
+

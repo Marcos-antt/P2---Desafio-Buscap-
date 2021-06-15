@@ -1,8 +1,8 @@
 class Produto:
 
-    def __init__(self, id=None, images=None,  name=None, preco=None, valorPrestacao=None, prestacao=None):
+    def __init__(self, id=None, imagens=list,  name=None, preco=None, valorPrestacao=None, prestacao=None):
         self.__id = id 
-        self.__images = images
+        self.__imagens = imagens
         self.__name = name
         self.__preco = preco
         self.__valorPrestacao = valorPrestacao
@@ -14,11 +14,11 @@ class Produto:
     def set_id(self, id):
         self.__id = id
 
-    def get_images(self):
-        return self.__images
+    def get_imagens(self):
+        return self.__imagens
     
     def set_imagens(self, img):
-        self.__images = img
+        self.__imagens = img
 
     def get_name(self):
         return self.__name
