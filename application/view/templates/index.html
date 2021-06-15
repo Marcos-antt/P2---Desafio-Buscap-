@@ -4,9 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{{url_for('static', filename='css/style.css')}}" rel="stylesheet">
+    <script src="{{ url_for('static', filename='js/menu.js') }}"></script>
+    
     <title>BUSCAPÉ</title>
 </head>
 <body>
-    <h1>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</h1>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#index"><img src="{{url_for('static', filename='img/logo.png')}}" class="logo-menu"  /></a>
+        </div>
+        <button id="menu_botao">
+            <img id="menu_carrinho" src="{{ url_for('static', filename='img/menu.png') }}" onclick="">
+            <div id="dropdown-content">
+    </nav>
+    
+
+
+
+    <div>
+        {% for produto in produto_list %}
+        <div class="Produtos">                
+            <img id="fotoProduto" src="https:{{produto.get_imagesProduto}}">
+            <p id="nomeProduto">{{produto.get_name()}}</p>
+            <p>precos: {{produto.get_preco()}}</p>
+            <button id="botaoComprar">Adicionar ao Carrinho</button>                
+        </div>
+        {% endfor %}
+    </div>
+
+
 </body>
 </html>
